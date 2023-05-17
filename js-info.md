@@ -27,9 +27,16 @@ document.body.style.background = "red";
 setTimeout(() => document.body.style.background = "", 1000);
 ```
 ```
-DOM faqat brauzerlar uchun emas**
+DOM faqat brauzerlar uchun emas**x
 DOM spetsifikatsiyasi hujjatning tuzilishini tushuntiradi va uni boshqarish uchun ob'ektlarni taqdim etadi. DOM-dan foydalanadigan brauzer bo'lmagan asboblar ham mavjud.
 
 Masalan, HTML-sahifalarni yuklab oladigan va ularni qayta ishlovchi server tomonidagi skriptlar ham DOM-dan foydalanishi mumkin. Ular spetsifikatsiyaning faqat bir qismini qo'llab-quvvatlashi mumkin.
 ```
+**Bom**
 
+```js
+alert(location.href); // shows current URL : joriy URLni ko'rsatadi
+if (confirm("Go to Wikipedia?")) {
+  location.href = "https://wikipedia.org"; // redirect the browser to another URL : brauzerni boshqa URL manziliga yo'naltiring
+} 
+```
